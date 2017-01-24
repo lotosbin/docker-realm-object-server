@@ -9,7 +9,7 @@ RUN apt-get update && \
 RUN curl -s https://packagecloud.io/install/repositories/realm/realm/script.deb.sh | bash
 
 # Install the Realm Object Server
-RUN apt-get install -y realm-object-server-de
+RUN apt-get install -y realm-object-server-developer
 
 # Enable the service
 RUN systemctl enable realm-object-server
